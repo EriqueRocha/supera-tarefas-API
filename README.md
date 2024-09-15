@@ -47,8 +47,8 @@ public enum Status {
 ### SpringDataJpa:
 ```XML
 <dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-data-jpa</artifactId>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
 ```
 Implementa uma camada de acesso aos dados de forma facilitada, faça seus métodos personalizados e o Spring fornecerá a implementação
@@ -56,8 +56,8 @@ Implementa uma camada de acesso aos dados de forma facilitada, faça seus métod
 ### Flyway:
 ```XML
 <dependency>
-	<groupId>org.flywaydb</groupId>
-	<artifactId>flyway-core</artifactId>
+  <groupId>org.flywaydb</groupId>
+  <artifactId>flyway-core</artifactId>
 </dependency>
 ```
 ajuda com a migração de banco de dados, no caso, está sendo utilizado para que a aplicação inicie com um administrador e um usuário cadastrado
@@ -65,9 +65,9 @@ ajuda com a migração de banco de dados, no caso, está sendo utilizado para qu
 ### PostgreSQL:
 ```XML
 <dependency>
-	<groupId>org.postgresql</groupId>
+  <groupId>org.postgresql</groupId>
   <artifactId>postgresql</artifactId>
-	<scope>runtime</scope>
+  <scope>runtime</scope>
 </dependency>
 ```
 drive para a utilização do SGBD PostgreSQL
@@ -95,10 +95,10 @@ valida os dados em objetos Java de acordo com as anotações de validação.
 ### Junit:
 ```XML
 <dependency>
- <groupId>org.junit.jupiter</groupId>
- <artifactId>junit-jupiter</artifactId>
- <version>5.11.0</version>
- <scope>test</scope>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <version>5.11.0</version>
+  <scope>test</scope>
 </dependency>
 ```
 fornece a API do JUnit 5 para escrever testes.
