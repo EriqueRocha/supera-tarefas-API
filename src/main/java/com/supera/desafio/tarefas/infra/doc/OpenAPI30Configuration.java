@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
         info = @Info(title = "Erique Rocha - Falae - API", version = "1.0",
                 contact = @Contact(name = "Erique Rocha", email = "eriquebit@gmail.com", url = "https://www.erique.dev"),
                 license = @License(name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0"), termsOfService = "TOS",
-                description = "API do forum falae.dev"),
+                description = "API de Tarefas"),
         servers = {
                 @Server(url = "https://supera-tarefas-api-production.up.railway.app/", description = "Production"),
                 @Server(url = "http://localhost:8080/", description = "Development")})
