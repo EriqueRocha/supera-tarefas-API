@@ -31,6 +31,9 @@ public class TaskFolderService {
 
     public Object save(String nameFolder) {
         try {
+            if(nameFolder == null || nameFolder.isEmpty()){
+                return ResponseFactory.errorNotAcceptable(null,"informe o nome da pasta","o nome da pasta é obrigatório");
+            }
             if (taskFolderRepository.existsByFolderName(nameFolder)) {
                 return ResponseFactory.errorConflict("já existe uma tarefa com este nome", "mude o nome e tente novamente");
             }

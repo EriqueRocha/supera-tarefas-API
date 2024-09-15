@@ -42,6 +42,10 @@ public class ResponseFactory {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new Response<>(LocalDateTime.now(), false, message, 500, null, observation));
     }
 
+    public static Object errorNotAcceptable(Object body, String message, String observation) {
+        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(new Response<>(LocalDateTime.now(), false, message, 406, body, observation));
+    }
+
     public static Object errorBadRequest() {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new Response<>(LocalDateTime.now(), false, "erro não catalogado", 500, null, "entre em contato com o desenvolvedor"));
     }

@@ -12,16 +12,12 @@ import com.supera.desafio.tarefas.repository.TaskRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class TaskService {
@@ -37,6 +33,9 @@ public class TaskService {
 
     public Object save(TaskRequest taskRequest) {
         try {
+            if(taskRequest.taskName() == null || taskRequest.taskName().isEmpty()){
+                return ResponseFactory.errorNotAcceptable(null,"informe o nome da task","o nome da task é obrigatório");
+            }
             if (taskRepository.existsByTaskName(taskRequest.taskName())){
                 return ResponseFactory.errorConflict("já existe uma tarefa com este nome","mude o nome e tente novamente");
             }
