@@ -113,3 +113,6 @@ fornece a API do JUnit 5 para escrever testes.
 </dependency>
 ```
 facilita a criação de objetos simulados (mocks) para testar o comportamento
+
+### Endpoints:
+<img src="Captura de tela.png" style="width: 100%;">
