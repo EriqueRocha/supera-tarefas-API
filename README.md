@@ -1,4 +1,4 @@
-# API de ocorrências
+# API de Tarefas
 
 <a href="https://supera-tarefas-api-production.up.railway.app/swagger-ui/index.html" target="_blank">Acesse a API pela documentação do swagger clicando aqui</a>
 
