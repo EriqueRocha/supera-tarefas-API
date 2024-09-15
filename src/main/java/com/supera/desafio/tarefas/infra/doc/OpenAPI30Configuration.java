@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @OpenAPIDefinition(
-        info = @Info(title = "Erique Rocha - Falae - API", version = "1.0",
+        info = @Info(title = "Erique Rocha - Tarefas - API", version = "1.0",
                 contact = @Contact(name = "Erique Rocha", email = "eriquebit@gmail.com", url = "https://www.erique.dev"),
                 license = @License(name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0"), termsOfService = "TOS",
                 description = "API de Tarefas"),
